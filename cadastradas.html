@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Listagem de Máquinas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<main>
+
+	<h1>Listagem de Maquinas</h1>
+<div class="box">
+	<table class="tabela">
+		<thead>
+			<tr>
+				<th class="h2">ID</th>
+				<th class="h1">Nome da Maquina</th>
+				<th class="h2">Fabricante</th>
+				<th class="h1">Localização</th>
+				<th class="h3">Tipo de Máquina</th>
+                <th class="h3">Ult. Manutenção</th>
+                <th class="h3">Prox. Manutenção</th>
+			</tr>
+		</thead>
+		<tbody id="maquinas-table-body"></tbody>
+	</table>
+
+    <!--BOTÃO DE VOLTAR A PÁGINA-->
+	<a  href="index.html">
+	<button>Voltar</button>
+    </a>
+
+	<button type="button" onclick="atualizarMaquina()">Atualizar Cadastros</button>
+	<!--AQUI VAI PARA O ATUALIZAR.JS E EXECUTA A FUNÇÃO ASSOCIADA AO BOTÃO DE CADASTRAR USUÁRIOS-->
+
+</div>
+</main>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+	<!--Api's-->
+	<script src="scripts-api/getusers.js"></script>
+	<script src="scripts-api/atualizar.js"></script>
+	<script src="scripts-api/delete.js"></script>
+
+</body>
+
+</html>

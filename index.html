@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>TESTE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--Coisa do Lighthouse-->
+  <link rel="apple-touch-icon" href="/assets/img/logo-cookie.png">
+<!-- <script>navigator.serviceWorker.register("back-end/node_modules/moment/dist/locale/sw.js")</script>  -->
+  <meta name="theme-color" content="#317EFB" />
+</head>
+
+<body>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action="">
+          <h1>Cadastro</h1>
+
+          <p>
+            <label for="nome_cad">Nome da Máquina</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Waltz Maxima 33000" />
+          </p>
+
+          <p>
+            <label for="fab_cad">Fabricante</label>
+            <input id="fab_cad" name="fabr_cad" required="required" type="email" placeholder="Consul" />
+          </p>
+
+          <p>
+            <label for="local_cad">Localização</label>
+            <input id="local_cad" name="local_cad" required="required" placeholder="ex. Piso 1, Sala 22" />
+          </p>
+          
+          <p>
+            <label for="tipo_cad">Tipo de máquina</label>
+            <input id="tipo_cad" name="tipo_cad" required="required"  placeholder="ex. secadora" />
+          </p>
+
+          <p>
+            <label for="ultimanutencao_cad">Ultim. manutenção</label>
+            <input id="ultimanutencao_cad" name="ultimanutencao_cad" required="required"  placeholder="ex. 07/03/2003" />
+          </p>
+
+          <p>
+            <label for="proximanutencao_cad">Prox. manutenção</label>
+            <input id="proximanutencao_cad" name="proximanutencao_cad" required="required" placeholder="ex. 12/08/2003" />
+          </p>
+
+          <p>
+            <button id="cadastro-button" type="button">Cadastrar Manutenção</button>
+          </p>
+
+          <a href="cadastradas.html">
+          <button id="maquinas-button" type="button">Visualizar Máquinas Cadastradas</button>
+          </a>
+
+        </form>
+
+      </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+      <script src="/scripts-api/criar.js"></script>
+   
+</body>
+
+</html>
